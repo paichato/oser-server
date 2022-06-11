@@ -2,6 +2,9 @@
   "name": "oser-server",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "tsc && node ./dist/server.js"
+  },
   "repository": "https://github.com/paichato/oser-server.git",
   "author": "paichato <tsenane14@gmail.com>",
   "license": "MIT",
