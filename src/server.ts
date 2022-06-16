@@ -7,6 +7,8 @@ const app = express();
 //   return res.json({ message: "Hello World" });
 // });
 
+//
+
 app.get("/", createCourse);
 
 app.listen(3333, () => {

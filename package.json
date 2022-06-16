@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev ./src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn ./src/server.ts"
   },
   "repository": "https://github.com/paichato/oser-server.git",
   "author": "paichato <tsenane14@gmail.com>",
