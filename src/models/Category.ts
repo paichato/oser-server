@@ -1,7 +1,7 @@
 class Category {
   id: string;
   name: string;
-  desription: string;
+  description: string;
   created_at: Date;
 }
 
