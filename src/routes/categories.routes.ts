@@ -9,11 +9,13 @@ const categories: Category[] = [];
 categforiesRoutes.post("/categories", (req, res) => {
   const { name, description } = req.body;
 
-  const category: Category = {
+  const category = new Category();
+
+  Object.assign(category, {
     name,
     description,
     created_at: new Date(),
-  };
+  });
 
   categories.push(category);
 
