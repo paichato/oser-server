@@ -12,7 +12,6 @@ categforiesRoutes.post("/categories", (req, res) => {
   const category: Category = {
     name,
     description,
-    id: uuidv4(),
     created_at: new Date(),
   };
 
