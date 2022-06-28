@@ -7,9 +7,9 @@ export const AppDataSource = new DataSource({
   username: "docker",
   password: "ignite",
   database: "rentx",
-  synchronize: true,
-  logging: true,
+  // synchronize: true,
+  // logging: true,
   // entities: [Post, Category],
-  subscribers: [],
-  migrations: [],
+  // subscribers: [],
+  // migrations: [],
 });
