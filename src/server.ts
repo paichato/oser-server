@@ -1,6 +1,7 @@
 import express from "express";
 import { createCourse } from "./routes";
 import { categforiesRoutes } from "./routes/categories.routes";
+import "./database";
 
 const app = express();
 
