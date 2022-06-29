@@ -4,7 +4,7 @@ import { User } from "./entity/User";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: "localhost",
+  host: "database",
   port: 5432,
   username: "docker",
   password: "ignite",
@@ -12,6 +12,9 @@ export const AppDataSource = new DataSource({
   synchronize: true,
   logging: false,
   entities: [User],
-  migrations: [],
+  migrations: ["./src/database/migrations"],
   subscribers: [],
 });
+
+// import { AppDataSource } from "./data-source";
+// import { User } from "./entity/User";
